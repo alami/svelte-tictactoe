@@ -14,8 +14,8 @@
 
 <div class="status">Next player: X</div>
 <div class="board">
-    {#each Array(9) as square, i}
-        <Square value={i}/>
+    {#each state.squares as value, i}
+        <Square {value} on:click={e => handleClick(i)}/>
     {/each}
 </div>
 
