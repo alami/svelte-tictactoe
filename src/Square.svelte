@@ -1,4 +1,10 @@
-<button></button>
+<script>
+    export let value = '';
+</script>
+
+<button on:click>
+    {value}
+</button>
 
 <style>
     button {
